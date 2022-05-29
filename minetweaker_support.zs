@@ -1,4 +1,4 @@
-# CraftTweker Integration (1.12.2):
+# MineTweaker Integration (1.7.10):
 /*
     output - it's an item that should come out of the mechanism; that is, this item creates this mechanism
     container - basically, this is the main item from which the output item is created
@@ -8,6 +8,7 @@
     temperature - temperature to create (in degrees)
     energy - required amount of energy for crafting (EU)
     percent - chance of creation
+    consume - is the item being taken or not (true/false)
     col - count
 
     output - это предмет, который выходит из механизма; то есть, это предмет, который должен создаваться механизмом
@@ -18,81 +19,46 @@
     temperature - температура для создания (в градусах)
     energy - необходимое количество энергии для крафта (EU)
     percent - шанс создания
+    consume - забирается предмет или нет (true/false)
     col - количество
 
-    Actual for: Industrial Upgrade 1.12.2, v.2.4 (build #20)
+    Actual for: Industrial Upgrade 1.7.10, v.2.5.21
 */
 
-## - AlloySmelter:
-mods.industrialupgrade.AlloySmelter.addRecipe(output, container, fill, temperature);
-mods.industrialupgrade.AlloySmelter.removeRecipe(output);
-
-## - AdvAlloySmelter:
-mods.industrialupgrade.AdvAlloySmelter.addRecipe(output, container, fill, fill1, temperature);
+## - ADVANCED ALLOYSMELTER (улучшенный производитель сплавов).
+mods.industrialupgrade.AdvAlloySmelter.addRecipe(output, container, fill, fill1);
 mods.industrialupgrade.AdvAlloySmelter.removeRecipe(output);
 
-## - Compressor:
-mods.industrialupgrade.compressor.addRecipe(output, container);
-mods.industrialupgrade.compressor.remove(output);
+## - ALLOYSMELTER (производитель сплавов).
+mods.industrialupgrade.AlloySmelter.addRecipe(output, container, fill);
+mods.industrialupgrade.AlloySmelter.removeRecipe(output);
 
-## - Cutting:
-mods.industrialupgrade.cutting.addRecipe(output, container);
-mods.industrialupgrade.cutting.remove(output);
+## - DOUBLE MOLECULARTRANSFORMER (двойной молекулярный преобразователь).
+mods.industrialupgrade.MolecularTransformer.addRecipe(output, container, fill, energy);
+mods.industrialupgrade.MolecularTransformer.removeRecipe(output);
 
-## - DoubleMolecularTransformer:
-mods.industrialupgrade.DoubleMolecularTransformer.addRecipe(output, container, fill, energy);
-mods.industrialupgrade.DoubleMolecularTransformer.removeRecipe(output);
-
-## - Enrich:
+## - ENRICH (обогатитель).
 mods.industrialupgrade.Enrich.addRecipe(output, container, fill);
 mods.industrialupgrade.Enrich.removeRecipe(output);
 
-## - Extractor:
-mods.industrialupgrade.extractor.addRecipe(output, container);
-mods.industrialupgrade.extractor.remove(output);
-
-## - Extruder:
-mods.industrialupgrade.extruding.addRecipe(output, container);
-mods.industrialupgrade.extruding.remove(output);
-
-## - Fermer:
+## - FERMER (фермер):
 mods.industrialupgrade.Fermer.addRecipe(output, container);
 mods.industrialupgrade.Fermer.addRecipe(output, container, time);
 mods.industrialupgrade.Fermer.addRecipe(output, container, time, consume);
-mods.industrialupgrade.Fermer.remove(output);
+mods.industrialupgrade.Fermer.removeRecipe(output);
 
-## - Quarry (CTF):
-mods.industrialupgrade.QuarryFurnaceRecipe.addRecipe(output);
-mods.industrialupgrade.QuarryFurnaceRecipe.remove(input);
-
-## - GenMicrochip:
+## - GENSHIP (производитель микросхем):
 mods.industrialupgrade.GenMicrochip.addRecipe(output, container, fill, fill1, fill2, fill3, temperature);
 mods.industrialupgrade.GenMicrochip.removeRecipe(output);
 
-## - Macerator:
-mods.industrialupgrade.macerator.addRecipe(output, container);
-mods.industrialupgrade.macerator.remove(output);
-
-## - MatterRecipe:
+## - MATTERRECIPE (преобразователь тёмной материи):
 mods.industrialupgrade.MatterRecipe.addRecipe(output, matter, sunmatter, aquamatter, nethermatter, nightmatter, earthmatter, endmatter, aermatter);
-mods.industrialupgrade.MatterRecipe.remove(input);
+mods.industrialupgrade.MatterRecipe.removeRecipe(output);
 
-## - MolecularTransformer:
+## - MOLECULARTRANSFORMER (молекулярный преобразователь):
 mods.industrialupgrade.MolecularTransformer.addRecipe(output, ingredient, energy);
-mods.industrialupgrade.MolecularTransformer.addOreRecipe(output, ingredient, energy);
 mods.industrialupgrade.MolecularTransformer.removeRecipe(output);
 
-## - Quarry (CT)
-mods.industrialupgrade.QuarryRecipe.addRecipe(output);
-mods.industrialupgrade.QuarryRecipe.remove(input);
-
-## - Rolling
-mods.industrialupgrade.rolling.addRecipe(output, container);
-mods.industrialupgrade.rolling.remove(output);
-
-## - Synthesis:
+## - SYNTHESIS (реактор ядерного синтеза):
 mods.industrialupgrade.Synthesis.addRecipe(output, container, fill, percent);
 mods.industrialupgrade.Synthesis.removeRecipe(output);
-
-## - UURecipe
-mods.industrialupgrade.UURecipe.addRecipe(output, col);
