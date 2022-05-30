@@ -4,9 +4,14 @@ This repository is intended for developers of assemblies related to the modifica
 
 Этот репозиторий предназначен для разработчиков сборок, связанных с модификацией Industrial Upgrade. Здесь будут публиковаться макеты для CraftTweaker (1.12.2) и MineTweaker (1.7.10), а также другие полезные моменты для собственного управления модом.
 
+Fullness (readiness): 100%
+
+// ------------------------------------------------------------ \\
 
 Offical Discord Industrial Upgrade: https://discord.gg/uCybshDEaY
 
 Offical GitHub Industrial Upgrade: https://github.com/ZelGimi/industrialupgrade
 
 Offical CurseForge Industrial Upgrade: https://www.curseforge.com/minecraft/mc-mods/industrial-upgrade
+
+// ------------------------------------------------------------ \\
