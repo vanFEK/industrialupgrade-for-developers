@@ -6,7 +6,7 @@ This repository is intended for developers of assemblies related to the modifica
 
 Fullness (readiness): 100%
 
-// ------------------------------------------------------------ \\
+// ------------------------------------------------------------ 
 
 Offical Discord Industrial Upgrade: https://discord.gg/uCybshDEaY
 
@@ -14,4 +14,4 @@ Offical GitHub Industrial Upgrade: https://github.com/ZelGimi/industrialupgrade
 
 Offical CurseForge Industrial Upgrade: https://www.curseforge.com/minecraft/mc-mods/industrial-upgrade
 
-// ------------------------------------------------------------ \\
+// ------------------------------------------------------------ 
