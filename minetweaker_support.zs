@@ -34,7 +34,7 @@ mods.industrialupgrade.AlloySmelter.addRecipe(output, container, fill);
 mods.industrialupgrade.AlloySmelter.removeRecipe(output);
 
 ## - DOUBLE MOLECULARTRANSFORMER (двойной молекулярный преобразователь).
-mods.industrialupgrade.DoubleMolecularTransformer.addRecipe(IItemStack output, IIngredient container, IIngredient fill, double energy)
+mods.industrialupgrade.DoubleMolecularTransformer.addRecipe(output, container, fill, energy);
 mods.industrialupgrade.DoubleMolecularTransformer.removeRecipe(output);
 
 ## - ENRICH (обогатитель).
