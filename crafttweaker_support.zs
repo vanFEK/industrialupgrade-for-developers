@@ -31,6 +31,46 @@ mods.industrialupgrade.AlloySmelter.removeRecipe(output);
 mods.industrialupgrade.AdvAlloySmelter.addRecipe(output, container, fill, fill1, temperature);
 mods.industrialupgrade.AdvAlloySmelter.removeRecipe(output);
 
+## - Air Transformer
+mods.industrialupgrade.AerAssembler.addRecipe(output, fill, matter);
+mods.industrialupgrade.AerAssembler.removeRecipe(output);
+
+## - Aqua Transformer
+mods.industrialupgrade.AquaAssembler.addRecipe(output, fill, matter);
+mods.industrialupgrade.AquaAssembler.removeRecipe(output);
+
+## - Canning
+mods.industrialupgrade.Canning.addRecipe(output, container, fill);
+mods.industrialupgrade.Canning.removeRecipe(output);
+
+## - Centrifuge
+mods.industrialupgrade.centrifuge.addRecipe(container, temperature, IItemStack... output);
+mods.industrialupgrade.centrifuge.remove(IItemStack output);
+
+## - Chemical Factory
+mods.industrialupgrade.ChemicalFactory.addRecipe(output, container, container1, liquidStack);
+mods.industrialupgrade.ChemicalFactory.remove(output);
+
+## - Quarry Combined Crushed Recipe
+mods.industrialupgrade.QuarryCombCrushedRecipe.addRecipe(output);
+mods.industrialupgrade.QuarryCombCrushedRecipe.remove(input);
+
+## - Quarry Crushed Recipe
+mods.industrialupgrade.QuarryCrushedRecipe.addRecipe(output);
+mods.industrialupgrade.QuarryCrushedRecipe.remove(input);
+
+## - Quarry Furnace Recipe
+mods.industrialupgrade.QuarryFurnaceRecipe.addRecipe(output);
+mods.industrialupgrade.QuarryFurnaceRecipe.remove(input);
+
+## - Quarry Recipe
+mods.industrialupgrade.QuarryRecipe.addRecipe(output);
+mods.industrialupgrade.QuarryRecipe.remove(input);
+
+## - Comb Macerator
+mods.industrialupgrade.CombMacerator.addRecipe(output, container);
+mods.industrialupgrade.CombMacerator.remove(output);
+
 ## - Compressor:
 mods.industrialupgrade.compressor.addRecipe(output, container);
 mods.industrialupgrade.compressor.remove(output);
@@ -39,9 +79,21 @@ mods.industrialupgrade.compressor.remove(output);
 mods.industrialupgrade.cutting.addRecipe(output, container);
 mods.industrialupgrade.cutting.remove(output);
 
-## - DoubleMolecularTransformer:
+## - Default Assembler
+mods.industrialupgrade.DefaultAssembler.addRecipe(output, fill, matter);
+mods.industrialupgrade.DefaultAssembler.removeRecipe(output);
+
+## - Double Molecular Transformer:
 mods.industrialupgrade.DoubleMolecularTransformer.addRecipe(output, container, fill, energy);
 mods.industrialupgrade.DoubleMolecularTransformer.removeRecipe(output);
+
+## - Earth Assembler
+mods.industrialupgrade.EarthAssembler.addRecipe(output, fill, matter);
+mods.industrialupgrade.EarthAssembler.removeRecipe(output);
+
+## - End Transformer:
+mods.industrialupgrade.EndAssembler.addRecipe(output, fill, matter);
+mods.industrialupgrade.EndAssembler.removeRecipe(output);
 
 ## - Enrich:
 mods.industrialupgrade.Enrich.addRecipe(output, container, fill);
@@ -61,13 +113,21 @@ mods.industrialupgrade.Fermer.addRecipe(output, container, time);
 mods.industrialupgrade.Fermer.addRecipe(output, container, time, consume);
 mods.industrialupgrade.Fermer.remove(output);
 
-## - Quarry (CTF):
-mods.industrialupgrade.QuarryFurnaceRecipe.addRecipe(output);
-mods.industrialupgrade.QuarryFurnaceRecipe.remove(input);
+## - Electric Furnace:
+mods.industrialupgrade.electricfurnace.addRecipe(output, container, experience);
+mods.industrialupgrade.electricfurnace.remove(output);
 
-## - GenMicrochip:
+## - Gearing
+mods.industrialupgrade.gearing.addRecipe(output, container);
+mods.industrialupgrade.gearing.remove(output);
+
+## - Gen Microchip:
 mods.industrialupgrade.GenMicrochip.addRecipe(output, container, fill, fill1, fill2, fill3, temperature);
 mods.industrialupgrade.GenMicrochip.removeRecipe(output);
+
+## - Gen Rods
+mods.industrialupgrade.GenRods.addRecipe(output, container, fill, fill1, fill2, fill3, fill4);
+mods.industrialupgrade.GenRods.removeRecipe(output);
 
 ## - Macerator:
 mods.industrialupgrade.macerator.addRecipe(output, container);
@@ -77,18 +137,38 @@ mods.industrialupgrade.macerator.remove(output);
 mods.industrialupgrade.MatterRecipe.addRecipe(output, matter, sunmatter, aquamatter, nethermatter, nightmatter, earthmatter, endmatter, aermatter);
 mods.industrialupgrade.MatterRecipe.remove(input);
 
+## - Mineral Separator
+mods.industrialupgrade.MineralSeparator.addRecipe(IItemStack[] output, input, temperature, int... col);
+mods.industrialupgrade.MineralSeparator.removeRecipe(output);
+
 ## - MolecularTransformer:
 mods.industrialupgrade.MolecularTransformer.addRecipe(output, ingredient, energy);
 mods.industrialupgrade.MolecularTransformer.addOreRecipe(output, ingredient, energy);
 mods.industrialupgrade.MolecularTransformer.removeRecipe(output);
 
-## - Quarry (CT)
-mods.industrialupgrade.QuarryRecipe.addRecipe(output);
-mods.industrialupgrade.QuarryRecipe.remove(input);
+## - Nether Assembler
+mods.industrialupgrade.NetherAssembler.addRecipe(output, fill, matter);
+mods.industrialupgrade.NetherAssembler.removeRecipe(output);
+
+## - Ore Washing
+mods.industrialupgrade.orewashing.addRecipe(container, IItemStack... output);
+mods.industrialupgrade.orewashing.remove(output);
+
+## - Plactic Machine
+mods.industrialupgrade.PlacticMachine.addRecipe(output, container, liquidStack);
+mods.industrialupgrade.PlacticMachine.remove(output);
 
 ## - Rolling
 mods.industrialupgrade.rolling.addRecipe(output, container);
 mods.industrialupgrade.rolling.remove(output);
+
+## - Solid Canning
+mods.industrialupgrade.SolidCanning.addRecipe(output, container, fill);
+mods.industrialupgrade.SolidCanning.removeRecipe(output);
+
+## - Sunnarium
+mods.industrialupgrade.Sunnarium.addRecipe(output, container, fill, fill1, fill2);
+mods.industrialupgrade.Sunnarium.removeRecipe(output);
 
 ## - Synthesis:
 mods.industrialupgrade.Synthesis.addRecipe(output, container, fill, percent);
